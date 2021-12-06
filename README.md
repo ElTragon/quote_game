@@ -3,8 +3,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and Javascript
 
 ### Other Technology
-This project made use of 'CORS Anywhere' by [Rob--W](https://github.com/Rob--W/cors-anywhere/) to get arround the  'No 'Access-Control-Allow-Origin' error from the API call. To make sure the app works as instended please click on this link and request permission to use this app.
+This project made use of 'CORS Anywhere' by [Rob--W](https://github.com/Rob--W/cors-anywhere/) to get around the  'No 'Access-Control-Allow-Origin' error from the API call. To make sure the app works as instended please click on this link and request permission to use this app.
 [https://cors-anywhere.herokuapp.com/](https://cors-anywhere.herokuapp.com/)
+
+Other solutions would to set up a proxy server, for real-world deployment this is preferred.
 
 ## Installation 
 Once the above is done copy & paste following steps to install
@@ -16,7 +18,7 @@ npm start
 
 In the project directory, you can run:
 
-### `yarn start` and npm start
+### `yarn start` or npm start
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
