@@ -31,7 +31,7 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 ### Deployment
-A deployed version of the the app can be found [here](application-0-dppmx.mongodbstitch.com/).
+A deployed version of the the app can be found [here](https://application-0-dppmx.mongodbstitch.com/).
 
 Make sure to have permission from ['CORS Anywhere'](https://cors-anywhere.herokuapp.com/) to run the app as intended.
 
