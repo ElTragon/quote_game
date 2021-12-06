@@ -103,6 +103,7 @@
   background: transparent;
   /* margin-bottom: 10px; */
   /* transition:  10s ease; */
+  
 }
 
 
@@ -158,7 +159,7 @@
   border-radius: 12px;
   padding: 12px;
   box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
-  background: linear-gradient(to right bottom, #f5cac2, #ed7966);
+  /* background: linear-gradient(to right bottom, #f5cac2, #ed7966); */
 }
 
 .color_{

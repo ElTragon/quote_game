@@ -5,7 +5,7 @@ const StartMenu = ({onClick}) => {
 
 
     return(
-        <div className='startMenu'>
+        <div className='startMenu color_'>
             <h3>Welcome to Who Said That </h3>
             <p>
                 If you need help with the quote; click the  
