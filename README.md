@@ -3,14 +3,15 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and Javascript
 
 ### Other Technology
-This project made use of 'CORS Anywhere' by [Rob--W](https://github.com/Rob--W/cors-anywhere/) to get around the  'No 'Access-Control-Allow-Origin' error from the API call. To make sure the app works as intended please click on this link and request permission to use this app.
+This project makes use of 'CORS Anywhere' by [Rob--W](https://github.com/Rob--W/cors-anywhere/) to get around the  'No 'Access-Control-Allow-Origin' error from the API call. To make sure the app works as intended please click on this link and request permission to use this app.
 
 [https://cors-anywhere.herokuapp.com/](https://cors-anywhere.herokuapp.com/)
 
-Other solutions would to set up a proxy server, for real-world deployment this is preferred.
+Other solutions would to set up a proxy server; for real-world deployment this is preferred.
 
 ## Installation 
-Once the above is done copy & paste following steps to install
+Once the above is done. Copy & paste following steps to install the app
+
 ```bash
 git clone https://github.com/ElTragon/quote_game.git
 npm install # or yarn install
@@ -21,8 +22,7 @@ In the project directory, you can run:
 
 
 ### `yarn start` or npm start
-
-Make sure to cd into the 'src' directory to run these commands. 
+ 
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
