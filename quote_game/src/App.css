@@ -1,5 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
+
+
+
+
+.body {
+	font-family: "Raleway";
+  background: darkslategray;
+  color: black;
+}
+
 .App {
   text-align: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  /* position: relative; */
+  background: #fae5df;
+
 }
 
 .App-logo {
@@ -16,9 +33,7 @@
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -35,4 +50,246 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.card{
+  position: absolute;
+  /* background: linear-gradient(to right bottom, #2999f5, #1859d1); */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 60%;
+  min-height: 50%;
+  max-height: 80%;
+  /* display: flex; */
+  /* box-shadow: 0 1px 20px 0 rgba(69,90,100,.08); */
+  /* border-radius: 5px; */
+  display: grid;
+  grid-auto-flow: row;
+  grid-row-gap: 0px;
+  overflow: overlay;
+  /* background: linear-gradient(to right bottom, #2999f5, #1859d1); */
+  align-content: center; 
+  /* background: #fae5df; */
+  /* padding-bottom: 30px; */
+  /* scrollbar-width: 0px; */
+  /* padding-right: 30px; */
+  /* overflow-y: none; */
+  /* align-items: center;
+  
+  
+
+  /* justify-content: center; */
+  /* background: white; */
+}
+
+.card::-webkit-scrollbar { width: 0 !important }
+
+.btn {
+  /* background: linear-gradient(to right bottom, #f5cac2, #ed7966); */
+  border-radius: 45px;
+  padding: 12px;
+  background-color: #555;
+  /* color: whitesmoke; */
+  font-size: 16px;
+  font-weight: 550;
+  padding: 12px 24px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid gainsboro;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.6s background ease-in-out, 0.3s box-shadow ease-in-out;
+  background: transparent;
+  /* margin-bottom: 10px; */
+  /* transition:  10s ease; */
+}
+
+
+
+.btn:hover {
+  background:gainsboro;
+  /* background: transparent, 0.6; */
+
+  /* color:white; */
+  
+
+  border: 1px solid #f5cac2;
+  /* transition:  10s ease;
+  transform-style: flat; */
+}
+
+.question {
+  position: relative;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); */
+  /* background: linear-gradient(to right bottom, #f5cac2, #ed7966, #303179); */
+  /* width: 100%;
+  min-height: 50%;
+  max-height: 70%; */
+  /*  */
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  /* align-content: center;  */
+
+}
+
+.hint {
+  position: relative;
+  /* TODO:background to be added */
+}
+
+.bottom {
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.answer {
+  position: relative;
+  /* TODO: background to be added */
+  padding: 4px 4px 4px 4px;
+  /* background: linear-gradient(to right bottom,#ed7966, #303179); */
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.startMenu {
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+  background: linear-gradient(to right bottom, #f5cac2, #ed7966);
+}
+
+.color_{
+  background: linear-gradient(to right bottom, #fae5df, #f5cac2, #ed7966, #303179, #141850);
+  border-radius: 15px;
+  box-shadow: 1 2px 20px 1 rgba(69,90,100,.08);
+}
+
+/* Input style */
+.field {
+  width: 100%;
+  height: 56px;
+  border-radius: 4px;
+  position: relative;
+  color: black;
+  /* background-color: rgba(255, 255, 255, 0.3); */
+  background-color: transparent;
+  transition: 0.3s background-color ease-in-out, 0.3s box-shadow ease-in-out;
+}
+
+.field:hover {
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+.field.active {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.field.active input {
+  padding: 4px 4px 4px 4px;
+  background-color: transparent;
+  color: black;
+}
+
+.label {
+  color: black;
+}
+
+.field.active input + label {
+  top: 4px;
+  opacity: 1;
+  color: #1d1b20;
+  background-color: transparent;
+}
+
+.field.locked {
+  pointer-events: none;
+  background-color: transparent;
+  color: black;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  /* background-color: transparent; */
+  transition: background-color 5000s;
+  /* color: black; */
+  -webkit-text-fill-color: black !important;
+}
+
+.field input {
+  width: 80%;
+  height: 56px;
+  position: relative;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  /* font-family: "Gotham SSm A", "Gotham SSm B", sans-serif; */
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  background-color: transparent;
+  background: transparent;
+  color: #1d1b20;
+  outline: none;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0px 4px 20px 0px transparent;
+  transition: 0.3s background-color ease-in-out, 0.3s box-shadow ease-in-out,
+    0.1s padding ease-in-out;
+  -webkit-appearance: none;
+}
+
+.field input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  /* color: black; */
+  /* color: slategray; */
+}
+
+.field input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.field input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.field input:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.field input + label {
+  position: absolute;
+  top: 24px;
+  left: 16px;
+  /* font-family: "Gotham SSm A", "Gotham SSm B", sans-serif; */
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 24px;
+  background-color: transparent;
+  /* color: slategray; */
+  opacity: 0;
+  color: black;
+  pointer-events: none;
+  transition: 0.1s all ease-in-out; 
+}
+
+.field input + label.error {
+  color: #ec392f;
+}
+
+.field p.predicted {
+  /* position: absolute; */
+  top: 8px;
+  left: 16px;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: black;
+  opacity: 1;
+  pointer-events: none;
+  background-color: transparent;
 }
