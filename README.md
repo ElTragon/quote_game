@@ -21,7 +21,7 @@ npm start
 In the project directory, you can run:
 
 
-### `yarn start` or npm start
+### `yarn start` or `npm start`
  
 
 Runs the app in the development mode.\
