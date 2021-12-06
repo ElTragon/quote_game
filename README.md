@@ -22,6 +22,8 @@ In the project directory, you can run:
 
 ### `yarn start` or npm start
 
+Make sure to cd into the 'src' directory to run these commands. 
+
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
